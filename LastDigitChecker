@@ -1,0 +1,16 @@
+public class LastDigitChecker {
+    public static boolean hasSameLastDigit ( int x, int y, int z){
+        boolean r= false;
+        if ((x<10||x>1000)||(y<10 ||y>1000)||(z<10 ||z>1000)){
+             r= false;
+        }
+        else{
+            int a= x%10;
+            int b=y%10;
+            int c=z%10;
+            if((a==b)||(a==c)||(b==c)){
+                r=true;
+            }
+            
+        } return r;
+    }
